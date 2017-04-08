@@ -1,24 +1,157 @@
-.App {
+.app {
   text-align: center;
+  
+  font-size: 40px;
+  font-weight: normal;
+  font-family: 'Secular One', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
+.app-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+.config-label {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.config-textarea {
+  margin: 20px auto 0px auto;
+  max-width: 400px;
+  min-width: 300px;
+  
+  font-size: 14px;
+  font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.config-button {
+  margin: 0px auto;
+  
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.last-updated {
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.last-updated--label {
+  font-size: 20px;
+  font-weight: bolder;
+  
+  padding-right: 10px;
+}
+
+.last-updated--value {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.sensors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  margin: 0px;
+  padding: 0 10px 10px 10px;
+  
+  list-style: none;
+}
+
+.sensor {
+  min-width: 300px;
+  
+  margin: 30px 30px 10px 30px;
+  padding: 30px 10px 40px 10px;
+  
+  background-color: #FAFAFA;
+  /*border: 1px solid #DEDEDE;*/
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px 2px #DFDFDF;
+}
+
+.sensor--name {
+  font-size: 26px;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sensor--image {
+  height: 100px;
+  margin: 20px 0px 0px 0px;
+  
+  vertical-align: inherit;
+  display: inline-block;
+}
+
+.sensor--image-info {
+  margin: -10px 0px 30px 0px;
+  
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sensor--infos {
+  width: 180px;
+  margin: 0px auto;
+  
+  opacity: 0.6;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.sensor--info {
+  width: 50%;
+}
+  
+.sensor--info-value {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.degrees:after {
+  content: "\00b0";
+}
+
+.percent:after {
+  content: "%";
+  font-size: 14px;
+  position: relative;
+  left: 1px;
+  bottom: 5px;
+}
+
+.sensor--info-label {
+  font-size: 12px;
+  font-weight: 100;
+  font-family: 'Open Sans', sans-serif;
+  
+  text-transform: uppercase;
+}
+
+.sensor--updated {
+  display: none;
+  margin-top: 30px;
+  
+  font-size: 12px;
+  font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+.image-info {
+  display: none;
 }
