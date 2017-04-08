@@ -13,6 +13,12 @@
   color: white;
 }
 
+button {
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .config-label {
   font-size: 20px;
   font-weight: normal;
@@ -31,10 +37,6 @@
 
 .config-button {
   margin: 0px auto;
-  
-  font-size: 12px;
-  font-weight: normal;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .last-updated {
